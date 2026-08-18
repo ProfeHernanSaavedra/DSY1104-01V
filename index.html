@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo Venta de Café</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <!--
+    Estructura semántica
+    algo asi como <div>
+    <header>
+        <nav></nav>
+    </header>
+
+    <main>
+        <section></section>
+        <section></section>
+        <section></section>
+        <article></article>
+    </main>
+ 
+    <footer></footer>
+    
+   <div></div> -> no es semántico
+    -->
+    <header>
+        <h1>Venta del Mejor Café</h1>
+        <img src="imagenes/cafe.jpg" alt="Taza de Cafe" width="200" height="150">
+
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#productos">Productos</a>
+            <a href="#contacto">Contacto</a>
+            <a href="http://www.nespresso.com" target="_blank">Compra Nespresso</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio">
+            <h2>Un buen café cambia tu día</h2>
+            <p>Disfruta café de especialidad y productos <br>preparados cada mañana</p>
+            <a href="#productos">Ver Productos</a>
+        </section>
+
+        <id="productos">
+            <h2>Nuestros Productos</h2>
+            <div class="productos">
+                <article class="tarjeta">
+                    <h3>Capuchino</h3>
+                    <p>Café espresso, leche y espuma</p>
+                    <p class="precio">$3.200</p>
+                </article>
+
+
+                <article class="tarjeta">
+                    <h3>Café Latte</h3>
+                    <p>Espresso acompañado de leche cremosa</p>
+                    <p class="precio">$2.800</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contacto">
+        <p>El mejor Café - Viña del Mar</p>
+    </footer>
+
+</body>
+</html>

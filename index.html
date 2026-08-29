@@ -53,20 +53,45 @@
             </div>
         </section>
 
+        <section class="container py-4" >
+            <button id="boton-promocion" class="btn btn-warning" >
+                Mostrar Promoción
+            </button>
+            <div id="promocion" class="alert alert-success mt-3 d-none">
+                Compra dos cafés y recibe una galleta gratis
+            </div>
+        </section>
+
         <section id="productos">
             <h2>Nuestros Productos</h2>
+            <div class="text-">
+                Productos Seleccionados:
+                <span id="contador-productos" class="badget bg-warning" >0</span>
+                <p id="ultimo-producto" class="mt-3 text-success fw-bold" ></p>
+            </div>
             <div class="productos">
                 <article class="tarjeta">
                     <h3>Capuchino</h3>
                     <p>Café espresso, leche y espuma</p>
                     <p class="precio">$3.200</p>
+                    <button 
+                        class="btn btn-outline-primary boton-agregar"
+                        data-producto="Capuchino"
+                    >
+                        Agregar
+                    </button>
                 </article>
-
 
                 <article class="tarjeta">
                     <h3>Café Latte</h3>
                     <p>Espresso acompañado de leche cremosa</p>
                     <p class="precio">$2.800</p>
+                    <button 
+                        class="btn btn-outline-primary boton-agregar"
+                        data-producto="Café latte"
+                    >
+                        Agregar
+                    </button>
                 </article>
             </div>
         </section>

@@ -53,6 +53,57 @@ bontonesAgregar.forEach(function(boton){
     });
 });
 
+// ***** uso de formularios ******
+//rescatar los datos 
+const formulario = document.getElementById("formulario-reserva");
+const campoNombre = document.getElementById("nombre");
+const campoCorreo = document.getElementById("correo");
+const campoPersonas = document.getElementById("personas");
+const campoFecha = document.getElementById("fecha");
+const campoHorario = document.getElementById("horario");
+const mensajeResultado = document.getElementById("mensaje-resultado");
+
+formulario.addEventListener("submit",function(evento){
+    evento.preventDefault();
+
+    const nombre = campoNombre.value.trim();
+    const correo = campoCorreo.value.trim();
+    const personas = Number(campoPersonas.value);
+    const fecha = campoFecha.value;
+    const horario = campoHorario.value;
+
+    //validar
+    if(
+        nombre === "" ||
+        correo === "" ||
+        fecha === "" ||
+        horario === ""
+
+    ){
+        mensajeResultado.textContent = "Debe completar todos los campos";
+
+        mensajeResultado.className = "alert alert-danger mt-4";
+
+        return;
+    }
+
+    if (personas < 1 || personas > 10){
+        mensajeResultado.textContent = "La reseva debe ser entre 1 y 10 personas";
+
+        mensajeResultado.className = "alert alert-danger mt-4";
+
+        return;
+    }
+
+    mensajeResultado.textContent = 
+    "Reserva cofirmada para" + nombre + " el dia " + fecha +" a las "+horario +" para "+personas + " persona(s)";
+
+    mensajeResultado.className = "alert alert-success mt-4";
+
+    formulario.reset();
+
+});
+
 
 
 

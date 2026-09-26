@@ -1,311 +1,121 @@
-# DSY1104-01V 🚀
+# 🚀 DSY1104-01V – Desarrollo Full Stack II
 
-Repositorio de apoyo para la asignatura **DSY1104 – Desarrollo Fullstack II**, sección **01V**, año **2026**.
+Repositorio de la asignatura **DSY1104 – Desarrollo Full Stack II**.
 
-Este repositorio contiene los ejemplos, ejercicios y proyectos desarrollados durante las clases. El objetivo es que los estudiantes puedan revisar el código trabajado en aula, practicar y continuar desarrollando los ejercicios fuera de clases.
+En este repositorio encontrarás los ejemplos, ejercicios y proyectos desarrollados durante las clases, organizados por semana.
 
----
-
-## 👨‍🏫 Profesor
+## 👨‍🏫 Docente
 
 **Hernán Saavedra**
 
----
+## 🎯 Objetivo de la asignatura
 
-# 📚 Contenido del repositorio
+Durante el curso avanzaremos desde el desarrollo web tradicional hacia la construcción de aplicaciones Frontend modernas.
 
-El repositorio se irá actualizando durante el semestre a medida que avancemos en los contenidos de la asignatura.
+Trabajaremos progresivamente con:
 
-Actualmente el material se encuentra organizado principalmente por semanas.
+- HTML5
+- CSS3
+- JavaScript
+- Bootstrap
+- DOM
+- Formularios y validaciones
+- React
+- Vite
+- React Bootstrap
+- Node.js y npm
+- Git y GitHub
+- AWS EC2
 
-### 📁 DSY1104-01V
-
-Contiene material y ejemplos iniciales desarrollados durante las primeras clases de la asignatura.
-
----
-
-### 📁 Semana 3
-
-Ejercicios correspondientes a los contenidos desarrollados durante la tercera semana de clases.
-
----
-
-### 📁 Semana 4
-
-Ejercicios y ejemplos correspondientes a la cuarta semana.
-
-Durante estas primeras semanas hemos trabajado los fundamentos necesarios para avanzar posteriormente hacia el desarrollo de aplicaciones utilizando React.
-
----
-
-# ⚛️ Semana React
-
-En esta etapa comenzamos a trabajar con **React**.
-
-El proyecto se encuentra en:
+## 📂 Organización del repositorio
 
 ```text
-Semana react/
-└── mi-primer-react/
-```
-
-React nos permitirá construir aplicaciones web utilizando **componentes reutilizables**, dividiendo una aplicación en pequeñas partes que pueden desarrollarse y mantenerse de manera independiente.
-
-## 📌 Conceptos iniciales de React
-
-En nuestra primera aproximación a React revisamos conceptos como:
-
-* ¿Qué es React?
-* ¿Qué es Node.js?
-* ¿Qué es npm?
-* ¿Qué es Vite?
-* Creación de un proyecto React.
-* Estructura básica de un proyecto.
-* Componentes.
-* JSX.
-* Importación y exportación de componentes.
-* Eventos.
-* Estado de un componente.
-* Uso básico del Hook `useState`.
-
----
-
-# 🛠️ Tecnologías utilizadas
-
-Durante el curso utilizaremos principalmente:
-
-* HTML5
-* CSS3
-* JavaScript
-* Bootstrap
-* React
-* Vite
-* Node.js
-* npm
-* Visual Studio Code
-* Git
-* GitHub
-
----
-
-# ⚛️ Crear nuestro primer proyecto React
-
-Para crear un nuevo proyecto utilizamos **Vite**.
-
-Desde la terminal ejecutamos:
-
-```bash
-npm create vite@latest
-```
-
-Luego seleccionamos:
-
-```text
-Framework: React
-Variant: JavaScript
-```
-
-Entramos a la carpeta del proyecto:
-
-```bash
-cd mi-primer-react
-```
-
-Instalamos las dependencias:
-
-```bash
-npm install
-```
-
-Finalmente iniciamos el servidor de desarrollo:
-
-```bash
-npm run dev
-```
-
-Vite mostrará una dirección local similar a:
-
-```text
-http://localhost:5173/
-```
-
-Abrimos esa dirección en nuestro navegador para visualizar la aplicación.
-
----
-
-# 📂 Estructura básica de un proyecto React
-
-Un proyecto creado con React y Vite tendrá una estructura similar a:
-
-```text
-mi-primer-react/
+DSY1104-01V/
 │
-├── public/
+├── Semana 3/
 │
-├── src/
-│   ├── assets/
-│   ├── components/
-│   ├── App.jsx
-│   └── main.jsx
+├── Semana 4/
 │
-├── index.html
-├── package.json
-└── vite.config.js
-```
-
-## Archivos importantes
-
-### `main.jsx`
-
-Es el punto de entrada de nuestra aplicación React.
-
-Desde aquí se carga el componente principal de nuestra aplicación.
-
-### `App.jsx`
-
-Es el componente principal.
-
-A partir de `App.jsx` podemos comenzar a incorporar nuestros propios componentes.
-
-### `components/`
-
-Podemos utilizar esta carpeta para organizar los componentes que iremos creando durante el curso.
-
-Por ejemplo:
-
-```text
-src/
-└── components/
-    ├── Contador.jsx
-    ├── Saludo.jsx
-    └── Formulario.jsx
-```
-
----
-
-# 🧩 ¿Qué es un componente?
-
-Un **componente** es una parte de nuestra aplicación que podemos crear y reutilizar.
-
-Por ejemplo, una aplicación podría estar formada por:
-
-```text
-App
+├── Semana react/
+│   ├── mi-primer-react/
+│   └── README.md
 │
-├── Header
-├── Menu
-├── Contador
-├── Formulario
-└── Footer
+└── README.md
 ```
 
-Cada una de estas partes puede ser un componente independiente.
+Cada carpeta contiene los ejemplos y ejercicios desarrollados durante las clases.
 
-Esto nos permite mantener nuestro código más organizado y reutilizar elementos cuando sea necesario.
+## 🌐 Primera etapa: HTML, CSS y JavaScript
 
----
+Durante las primeras clases trabajamos los fundamentos necesarios para desarrollar aplicaciones web:
 
-# 🔢 Ejemplo básico con useState
+- Estructura HTML.
+- Estilos mediante CSS.
+- Bootstrap.
+- Programación con JavaScript.
+- Manipulación del DOM.
+- Eventos.
+- Formularios.
+- Validaciones.
 
-Uno de los primeros ejemplos que podemos desarrollar en React es un contador:
+## ⚛️ Segunda etapa: React
 
-```jsx
-import { useState } from 'react'
+Actualmente comenzamos a trabajar con **React**.
 
-function Contador() {
+Para nuestros proyectos utilizaremos **Vite** como herramienta de creación y desarrollo.
 
-  const [contador, setContador] = useState(0)
+Durante esta etapa estudiaremos conceptos como:
 
-  return (
-    <div>
-      <h2>Contador: {contador}</h2>
+- ¿Qué es React?
+- Componentes.
+- JSX.
+- Props.
+- Estado.
+- Eventos.
+- Renderizado.
+- Componentes reutilizables.
+- React Bootstrap.
+- Organización de una aplicación React.
 
-      <button onClick={() => setContador(contador + 1)}>
-        Aumentar
-      </button>
-    </div>
-  )
-}
+Los ejemplos y materiales de esta unidad se encuentran en:
 
-export default Contador
-```
+📁 **Semana react**
 
-Con este pequeño ejemplo podemos comenzar a comprender:
+## ☁️ React y AWS
 
-* Componentes.
-* JSX.
-* Variables de estado.
-* `useState`.
-* Eventos.
-* Actualización automática de la interfaz.
+También aprenderemos a ejecutar y publicar una aplicación desarrollada con:
 
----
+**React + Vite + React Bootstrap**
 
-# 🎯 Objetivo del repositorio
+utilizando una instancia **EC2 de AWS**.
 
-Este repositorio busca complementar el trabajo realizado durante las clases.
+La guía paso a paso correspondiente se encuentra dentro del material de React.
 
-Los estudiantes podrán utilizarlo para:
+## 🛠️ Tecnologías utilizadas
 
-* Revisar los ejemplos desarrollados en clases.
-* Descargar el código realizado por el profesor.
-* Comparar sus soluciones.
-* Practicar los contenidos.
-* Repasar conceptos.
-* Continuar ejercicios iniciados durante la clase.
-* Prepararse para futuras actividades y evaluaciones.
+| Tecnología | Uso |
+|---|---|
+| HTML5 | Estructura de páginas |
+| CSS3 | Estilos |
+| JavaScript | Programación Frontend |
+| Bootstrap | Diseño responsive |
+| React | Desarrollo basado en componentes |
+| Vite | Creación y ejecución de proyectos React |
+| React Bootstrap | Componentes Bootstrap para React |
+| Node.js / npm | Entorno y dependencias |
+| AWS EC2 | Ejecución y publicación |
+| Git | Control de versiones |
+| GitHub | Repositorio y distribución del material |
 
----
+## 📌 Importante
 
-# 💻 Clonar el repositorio
+Este repositorio será actualizado durante el semestre a medida que avancemos en los contenidos.
 
-Para descargar todo el repositorio:
+No es necesario memorizar todos los comandos.
 
-```bash
-git clone https://github.com/ProfeHernanSaavedra/DSY1104-01V.git
-```
-
-Luego ingresar a la carpeta:
-
-```bash
-cd DSY1104-01V
-```
-
----
-
-# 🔄 Mantener actualizado el repositorio
-
-Como durante el semestre iremos agregando nuevos ejemplos y ejercicios, es recomendable actualizar periódicamente la copia local.
-
-Para obtener los últimos cambios:
-
-```bash
-git pull
-```
-
-De esta forma podrán acceder al material que se vaya incorporando después de cada clase.
+Lo importante es comprender **qué estamos haciendo, para qué sirve cada herramienta y cómo se relacionan las distintas tecnologías**.
 
 ---
 
-# 📌 Importante
-
-Este repositorio se encuentra **en constante actualización**.
-
-A medida que avancemos durante el semestre se incorporarán nuevos:
-
-* ejemplos,
-* ejercicios,
-* componentes,
-* proyectos,
-* actividades,
-* recursos de apoyo.
-
-Por lo tanto, el contenido disponible irá creciendo junto con el avance de la asignatura.
-
----
-
-## 👨‍💻 DSY1104 – Desarrollo Fullstack II
-
-**Sección:** 01V
-**Año:** 2026
-**Profesor:** Hernán Saavedra
+**DSY1104 – Desarrollo Full Stack II**  
+**Duoc UC**

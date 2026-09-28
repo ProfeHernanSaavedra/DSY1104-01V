@@ -1,30 +1,43 @@
-//import Saludo from './components/Saludo'
-import Producto from './components/Producto'
-import Contador from './components/Contador'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
+import Navbar from './components/Navbar'
+import Inicio from './pages/Inicio'
+import Productos from './pages/Productos'
+import Login from './pages/Login'
+import DetalleProducto from './pages/DetalleProducto'
 
-function App(){
+function App() {
+
   return (
-    <div>
-      <h1>Tienda React</h1>
-      {/** Comentarios*/}
-      <Producto 
-        nombre="Notebook Lenovo"
-        precio="599.990"
-      />
-      <Producto 
-        nombre = "Mouse Genius"
-        precio = "20.000"
-      />
-      <Producto 
-        nombre = "Monitor LG"
-        precio = "190.900"
-      />
+    <BrowserRouter>
 
-    <h1>Contador!! </h1>
-      <Contador /> {/** Así se llama el componente*/}
+      <Navbar />
 
-    </div>
+      <Routes>
+
+        <Route
+          path="/"
+          element={<Inicio />}
+        />
+
+        <Route
+          path="/productos"
+          element={<Productos />}
+        />
+
+        <Route
+          path="/producto/:id"
+          element={<DetalleProducto />}
+        />
+
+        <Route
+          path="/login"
+          element={<Login />}
+        />
+
+      </Routes>
+
+    </BrowserRouter>
   )
 }
 

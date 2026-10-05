@@ -34,7 +34,7 @@ function Login() {
             <form onSubmit={handleSubmit}>
 
                 <div className="mb-3">
-
+                    {/* 
                     <label className="form-label">
                         Correo electrónico
                     </label>
@@ -45,11 +45,26 @@ function Login() {
                         value={email}
                         onChange={(event) => setEmail(event.target.value)}
                     />
+                        */}
 
+                    <label
+                        htmlFor="email"
+                        className="form-label"
+                    >
+                        Correo electrónico
+                    </label>
+
+                    <input
+                        id="email"
+                        type="text"
+                        className="form-control"
+                        value={email}
+                        onChange={(event) => setEmail(event.target.value)}
+                    />
                 </div>
 
                 <div className="mb-3">
-
+                    {/*}
                     <label className="form-label">
                         Contraseña
                     </label>
@@ -60,7 +75,22 @@ function Login() {
                         value={password}
                         onChange={(event) => setPassword(event.target.value)}
                     />
+                        */}
 
+                    <label
+                        htmlFor="password"
+                        className="form-label"
+                    >
+                        Contraseña
+                    </label>
+
+                    <input
+                        id="password"
+                        type="password"
+                        className="form-control"
+                        value={password}
+                        onChange={(event) => setPassword(event.target.value)}
+                    />
                 </div>
 
                 {error && (
